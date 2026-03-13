@@ -1,6 +1,6 @@
 # AI Disaster Resilience Platform
 
-> A gamified, mobile-first disaster preparedness education platform for children and families across the ASEAN region.
+> A gamified, mobile-first AI disaster resilience platform designed for children and communities. The platform combines AI-powered interactive learning, augmented reality (AR), and AI real-time emergency support tools to help users understand disaster risks while also providing practical survival features during real emergencies.
 
 ---
 
@@ -15,6 +15,9 @@
 - [Installation & Setup](#installation--setup)
 
 ---
+## Demo Video
+https://www.youtube.com/watch?v=9-Y7TCkZXbg
+
 
 ## What is This Platform?
 
