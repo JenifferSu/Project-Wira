@@ -3,18 +3,6 @@
 > A gamified, mobile-first AI disaster resilience platform designed for children and communities. The platform combines AI-powered interactive learning, augmented reality (AR), and AI real-time emergency support tools to help users understand disaster risks while also providing practical survival features during real emergencies.
 
 ---
-
-## Table of Contents
-
-- [What is This Platform?](#what-is-this-platform)
-- [System Overview](#system-overview)
-- [Complete User Journey](#complete-user-journey)
-- [Feature Deep Dives](#feature-deep-dives)
-- [Gamification System](#gamification-system)
-- [Technology Stack](#technology-stack)
-- [Installation & Setup](#installation--setup)
-
----
 ## Demo Video
 https://www.youtube.com/watch?v=9-Y7TCkZXbg
 
@@ -32,23 +20,88 @@ The AI Disaster Resilience Platform is an **educational web application** that t
 - **Community-driven safety scores** (Village system)
 - **Child-friendly design** with mascots, badges, and rewards
 
-### The Problem It Solves
+## 🌏 Background
+ 
+Natural disasters — floods, storms, and landslides — occur frequently across ASEAN, with countries like Malaysia experiencing severe seasonal monsoon flooding. These events disproportionately affect vulnerable populations, especially rural communities and school-aged children who often lack the knowledge and tools to respond effectively.
+ 
+Traditional disaster education fails because it is:
+ 
+- 📖 **Lecture-based and forgettable** — passive content doesn't build muscle memory
+- 😨 **Not designed for children** — complex language and scary imagery alienate younger audiences
+- 📵 **Useless during actual disasters** — existing apps stop working when networks and power go down
+- 🧩 **Fragmented** — no single platform combines education, immersive training, and real emergency tools
+ 
+---
+ 
+## 🎯 Problem Statement
+ 
+> Communities in disaster-prone regions, particularly children, often lack accessible and engaging disaster preparedness education as well as reliable emergency communication tools that function during infrastructure failures such as power outages or network disruptions — making it difficult for them to respond safely and effectively during disasters such as floods, earthquakes, and severe storms.
+ 
+---
+ 
+## 🌱 SDG Alignment
+ 
+| SDG | Contribution |
+|---|---|
+| **SDG 11** — Sustainable Cities & Communities *(Primary)* | Strengthens disaster preparedness and resilience through AI-powered education and emergency response tools |
+| **SDG 4** — Quality Education *(Secondary)* | Delivers interactive, gamified digital learning that improves children's disaster safety knowledge |
+| **SDG 13** — Climate Action *(Secondary)* | Raises awareness of climate-related disasters and promotes community preparedness across ASEAN |
+ 
+---
+ 
+## 💡 Solution Overview
+ 
+**Project Wira** is a gamified, mobile-first AI disaster resilience platform that transforms passive disaster awareness into active, practised survival readiness. It is the first platform to unify all three pillars of disaster preparedness in a single child-friendly application:
+ 
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        PROJECT WIRA                             │
+├──────────────┬──────────────┬──────────────┬────────────────────┤
+│  DASHBOARD   │    ATLAS     │  AR TRAINING │  POSSUM PROTOCOL   │
+│  Home Base   │  Map & Risk  │  Simulation  │  Emergency Tools   │
+│  AI Alerts   │  AI Data     │  Training    │  Offline AI Suite  │
+│  Missions    │  Explorer    │  Practice    │  Mesh Network      │
+└──────────────┴──────────────┴──────────────┴────────────────────┘
+```
+ 
+**The core learning loop:**
+ 
+```
+LEARN (Atlas)  →  TRAIN (AR Time Machine)  →  EARN (XP & Badges)
+     ↑                                               ↓
+     └──────────────────── REPEAT ──────────────────┘
+                                  ↓
+                        SURVIVE (Possum Protocol)
+```
+ 
+Unlike traditional platforms, Project Wira provides offline emergency functions — SOS alerts, GPS sharing, flashlight signalling, and AI-powered mesh communication — enabling users to seek help even when internet and power infrastructure fail.
+ 
+---
+ 
+## 🤖 AI Integration
+ 
+AI is not a superficial layer in Project Wira — it is embedded as a continuous thread across every module, operating in two modes depending on connectivity.
+ 
+### AI by Module
+ 
+| Module | AI Component | What It Does |
+|---|---|---|
+| **Dashboard** | Threat Detection Engine | Ingests satellite, seismic & news feeds; generates probabilistic threat scores and pushes alerts *before* official warnings are issued |
+| **Dashboard** | Adaptive Mission Recommender | Personalises daily mission queues based on user region, skill gaps, and training history |
+| **Atlas** | Multi-Modal Risk Classifier | Dynamically updates SVG map markers with live AI-generated risk scores |
+| **Atlas** | RAG Brief Generator | Assembles real-time country risk briefs from verified source documents — prevents hallucination in safety-critical outputs |
+| **Atlas** | LSTM Forecast Model | Projects 30/60/90-day disaster probability trained on 30+ years of ASEAN data |
+| **Atlas** | Anomaly Detection | Monitors sensor streams for statistical deviations that precede disasters |
+| **AR Training** | RL Adaptive Difficulty Engine | Adjusts scenario complexity per user in real time based on performance telemetry |
+| **AR Training** | AI Performance Coach | Generates personalised post-simulation debrief with targeted improvement recommendations |
+| **Possum Protocol** | On-Device Audio CNN | Detects rescue whistle frequencies offline via quantised TensorFlow.js — no connectivity required |
+| **Possum Protocol** | Mesh Route Neural Net | Graph neural network optimises P2P device relay topology for maximum offline coverage |
+| **Possum Protocol** | AI Battery Governor | Regression model predicts remaining battery life and enforces hibernation to extend survival window |
+| **Possum Protocol** | Offline LLM (<50MB) | Compressed on-device language model answers survival queries without any network connection |
+| **UI Layer** | Stress-Adaptive Inference | Detects stress via touch pressure and gesture velocity; auto-simplifies UI during active emergencies |
+ 
 
-Natural disasters claim thousands of lives across ASEAN annually. Many deaths are preventable through proper education and preparation. However, traditional disaster training is often:
 
-- Boring and lecture-based
-- Too scary for children
-- Not accessible in local languages
-- Forgotten quickly
-
-### Our Solution
-
-**Learning through play** — Children and families learn life-saving skills through:
-- Interactive maps and disaster history exploration
-- AR simulation training that feels like a game
-- Earning XP, badges, and leveling up
-- Streaks and daily challenges to maintain engagement
-- Emergency tools that work when networks are down
 
 ---
 
