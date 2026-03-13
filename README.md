@@ -53,6 +53,17 @@ Traditional disaster education fails because it is:
 │  Missions    │  Explorer    │  Practice    │  Mesh Network      │
 └──────────────┴──────────────┴──────────────┴────────────────────┘
 ```
+
+The platform includes:
+ 
+- 🤖 **AI Real-Time Disaster Alerts** — live threat detection engine that monitors satellite feeds, seismic sensors, and news sources to push disaster warnings to users before official alerts are issued
+- 🗺️ **AI Geospatial Risk Atlas** — interactive SVG map of 10 ASEAN countries with AI-generated risk scores, historical disaster data, country risk profiles, and 30/60/90-day predictive climate forecasts
+- 🥽 **AR Time Machine Training** — immersive 360° flood and earthquake simulations with a targeting HUD, real-time zone detection, contextual historical disaster nodes, and AI-generated post-simulation performance reports
+- 📡 **Possum Protocol — Offline Emergency Suite** — P2P mesh networking, one-tap SOS broadcasting, GPS coordinate sharing, rescue whistle frequency detection, high-intensity flashlight signalling, and an AI battery governor — all fully functional without internet or power
+- 🎯 **Adaptive Learning Engine** — AI recommender personalises daily missions based on the user's region, skill gaps, and training history; difficulty adjusts in real time during AR simulations
+- 🏆 **Gamification & Progression System** — XP rewards, badge unlocks (Flood Explorer, Drill Master, Village Hero), daily streaks, and six-tier level progression from Novice to Master
+- 👶 **Child-Friendly Design** — Neo-brutalist UI with mascots, simplified language, large WCAG-compliant touch targets, and a high-contrast pastel palette designed for younger users
+ 
  
 **The core learning loop:**
  
