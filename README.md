@@ -18,6 +18,9 @@
 ## Demo Video
 https://www.youtube.com/watch?v=9-Y7TCkZXbg
 
+## Final Report
+https://drive.google.com/file/d/1BvBxPdb5UqVc4Zdx0weThzLgVEW48YJn/view?usp=sharing
+
 
 ## What is This Platform?
 
