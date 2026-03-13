@@ -10,16 +10,6 @@ https://www.youtube.com/watch?v=9-Y7TCkZXbg
 https://drive.google.com/file/d/1BvBxPdb5UqVc4Zdx0weThzLgVEW48YJn/view?usp=sharing
 
 
-## What is This Platform?
-
-The AI Disaster Resilience Platform is an **educational web application** that teaches disaster preparedness through **gamified learning experiences**. Designed specifically for the ASEAN region, it combines:
-
-- **Real disaster data** from 10 ASEAN countries
-- **Interactive AR-based training** for flood, earthquake, and other disasters
-- **Emergency survival tools** that work offline (Possum Protocol)
-- **Community-driven safety scores** (Village system)
-- **Child-friendly design** with mascots, badges, and rewards
-
 ## 🌏 Background
  
 Natural disasters — floods, storms, and landslides — occur frequently across ASEAN, with countries like Malaysia experiencing severe seasonal monsoon flooding. These events disproportionately affect vulnerable populations, especially rural communities and school-aged children who often lack the knowledge and tools to respond effectively.
