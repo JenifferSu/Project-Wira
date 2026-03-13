@@ -105,26 +105,6 @@ AI is not a superficial layer in Project Wira — it is embedded as a continuous
 
 ---
 
-## System Overview
-
-### The Four Main Modules
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    AI DISASTER RESILIENCE                       │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────┐│
-│  │  DASHBOARD  │  │   ATLAS     │  │     AR      │  │ POSSUM  ││
-│  │             │  │             │  │  TRAINING   │  │PROTOCOL ││
-│  │ Home Base   │  │  Map Explore│  │ Simulation  │  │Emergency││
-│  │ Progress    │  │  Disaster   │  │  History    │  │ Tools   ││
-│  │ Missions    │  │   Data      │  │  Practice   │  │ Offline ││
-│  └─────────────┘  └─────────────┘  └─────────────┘  └─────────┘│
-│                                                                  │
-└─────────────────────────────────────────────────────────────────┘
-```
-
 ### How The System Works
 
 ```mermaid
