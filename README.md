@@ -172,249 +172,7 @@ flowchart TD
     Return --> Select
 ```
 
----
-
-## Feature Deep Dives
-
-### 1. Dashboard — Command Center
-
-**Purpose:** Your home base showing progress, missions, and alerts.
-
-```
-┌──────────────────────────────────────────────────────────────┐
-│  ┌────────┐  ┌──────────────────┐  ┌──────────────────┐     │
-│  │ Avatar │  │ Weather Alert    │  │ Progress: 80%    │     │
-│  │ Level 4│  │ Flood Warning    │  │ 1,240 / 1,500 XP │     │
-│  └────────┘  └──────────────────┘  └──────────────────┘     │
-│                                                              │
-│  ┌────────────────────────────────────────────────────────┐ │
-│  │              DAILY MISSIONS                             │ │
-│  │  ┌────────┐  ┌────────┐  ┌────────┐  ┌────────┐      │ │
-│  │  │Explore │  │AR Hunt │  │Quake   │  │Quiz    │      │ │
-│  │  │History │  │Treasure│  │Drill   │  │Challenge│      │ │
-│  │  │+30 XP  │  │+50 XP  │  │+40 XP  │  │+20 XP  │      │ │
-│  │  └────────┘  └────────┘  └────────┘  └────────┘      │ │
-│  └────────────────────────────────────────────────────────┘ │
-│                                                              │
-│  ┌────────────────────────────────────────────────────────┐ │
-│  │                    YOUR BADGES                          │ │
-│  │  Flood Explorer    Storm Spotter   Safety Hero         │ │
-│  └────────────────────────────────────────────────────────┘ │
-│                                                              │
-│  ┌────────────────────────────────────────────────────────┐ │
-│  │        SWIPE RIGHT FOR EMERGENCY TOOLS                 │ │
-│  └────────────────────────────────────────────────────────┘ │
-└──────────────────────────────────────────────────────────────┘
-```
-
-**User Flow:**
-1. Open app → Land on Dashboard
-2. Check weather alert banner (real-time disaster warnings)
-3. Review XP progress toward next level
-4. Scroll through daily missions
-5. Tap mission card to begin
-
----
-
-### 2. Atlas — Explore Disaster Data
-
-**Purpose:** Interactive map showing disaster risks across 10 ASEAN countries.
-
-```
-┌──────────────────────────────────────────────────────────────┐
-│                     Search countries...                        │
-│                                                              │
-│  ┌────────────────────────────────────────────────────────┐ │
-│  │                                                        │ │
-│  │   Philippines              Vietnam                       │ │
-│  │   Typhoon Risk              Typhoon Risk                  │ │
-│  │                                                        │ │
-│  │        Myanmar    Thailand  Laos  Cambodia              │ │
-│  │      Cyclone     Flood    Flood   Flood                 │ │
-│  │                                                        │ │
-│  │  Indonesia                              Malaysia       │ │
-│  │  Volcano                                Flood           │ │
-│  │                                                        │ │
-│  │               Singapore                              │ │
-│  │               Heat Risk                               │ │
-│  └────────────────────────────────────────────────────────┘ │
-│                                                              │
-│  ┌────────────────────────────────────────────────────────┐ │
-│  │  Philippines - Typhoon Risk                            │ │
-│  │                                                        │ │
-│  │  RISK PROFILE                                          │ │
-│  │  Located in the Pacific typhoon belt with an average   │ │
-│  │  of 20 typhoons per year.                              │ │
-│  │                                                        │ │
-│  │  MAJOR HISTORICAL DISASTERS                           │ │
-│  │  Super Typhoon Haiyan 2013: 6300+ deaths               │ │
-│  │  Mount Pinatubo Eruption 1991: 800+ deaths             │ │
-│  │                                                        │ │
-│  │  MARK AS LEARNED                                        │ │
-│  └────────────────────────────────────────────────────────┘ │
-└──────────────────────────────────────────────────────────────┘
-```
-
-**User Flow:**
-1. Navigate to Atlas from bottom nav
-2. Search country or tap map marker
-3. Read risk profile and historical disasters
-4. Tap "Mark as Learned" to earn XP
-5. Country marker changes color (visited)
-
-**Learning Outcomes:**
-- Understand geographic disaster risks
-- Learn from historical events
-- Recognize warning signs and patterns
-
----
-
-### 3. AR Training — Immersive Simulation
-
-**Purpose:** Gamified disaster training using AR concepts and historical data.
-
-```
-┌──────────────────────────────────────────────────────────────┐
-│                   AR TIME MACHINE                             │
-│                    FLOOD TRAINING                             │
-└──────────────────────────────────────────────────────────────┘
-
-                        ┌─────────────┐
-                        │ STATE 1     │
-                        │ Start       │
-                        │ Training    │
-                        └──────┬──────┘
-                               │
-                               ▼
-                        ┌─────────────┐
-                        │ STATE 2     │
-                        │ Watch       │
-                        │ Tutorial    │
-                        │ Video       │
-                        └──────┬──────┘
-                               │
-                               ▼
-                        ┌─────────────┐
-                        │ STATE 3     │
-                        │ Scan Your   │
-                        │ Environment │
-                        └──────┬──────┘
-                               │
-                               ▼
-                        ┌─────────────┐
-                        │ STATE 4     │
-                        │ History     │
-                        │ Discovered! │
-                        └──────┬──────┘
-                               │
-                               ▼
-                        ┌─────────────┐
-                        │ STATE 5     │
-                        │ SIMULATION  │
-                        │ Water Rising │
-                        └──────┬──────┘
-                               │
-                               ▼
-                        ┌─────────────┐
-                        │ STATE 6     │
-                        │ SUCCESS!    │
-                        │ +50 XP      │
-                        └─────────────┘
-```
-
-**User Flow (Flood Training):**
-
-```mermaid
-stateDiagram-v2
-    [*] --> Start: Select AR Mission
-    Start --> Tutorial: Watch Video
-    Tutorial --> Scan: Point Camera
-    Scan --> History: Scan Environment
-    History --> Timeline: Flood Levels Found
-    Timeline --> Simulation: Show Historical Data
-    Simulation --> Rising: Water Rising
-    Rising --> Action: Find High Ground
-    Action --> Success: Tap in Time
-    Action --> Fail: Too Slow
-    Success --> [*]: XP and Celebration
-    Fail --> Simulation: Try Again
-```
-
-**Learning Outcomes:**
-- Recognize flood danger signs
-- Understand historical flood levels in your area
-- Practice quick decision-making
-- Learn evacuation strategies
-
----
-
-### 4. Possum Protocol — Emergency Survival Tools
-
-**Purpose:** Offline-capable emergency tools for when disaster strikes.
-
-```
-┌──────────────────────────────────────────────────────────────┐
-│                  POSSUM PROTOCOL                             │
-│                  SURVIVAL MODE ACTIVE                        │
-├──────────────────────────────────────────────────────────────┤
-│  MESH NETWORK    Ultra Power Saving     Battery: 67%        │
-└──────────────────────────────────────────────────────────────┘
-
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│  ┌──────────────┐  ┌──────────────┐                         │
-│  │ FLASHLIGHT   │  │  SOS BROADCAST│                         │
-│  │              │  │              │                         │
-│  │   TOGGLE     │  │   ACTIVATE    │                         │
-│  └──────────────┘  └──────────────┘                         │
-│                                                              │
-│  ┌────────────────────────────────────────────────────────┐ │
-│  │  SOUND RESCUE SIGNAL                                 │ │
-│  │  Listening for distress whistles...                    │ │
-│  └────────────────────────────────────────────────────────┘ │
-│                                                              │
-│  ┌────────────────────────────────────────────────────────┐ │
-│  │  OFFLINE MESH NETWORK                                 │ │
-│  │  4 nearby nodes found                                   │ │
-│  │  [Share GPS]  [Send Message]                            │ │
-│  └────────────────────────────────────────────────────────┘ │
-└──────────────────────────────────────────────────────────────┘
-```
-
-**User Flow (Emergency Scenario):**
-
-```mermaid
-flowchart TD
-    Dashboard[From Dashboard Swipe Right] --> Activate[Activate Possum Protocol]
-    Activate --> Assess{Assess Situation}
-    Assess --> Battery[Check Battery]
-    Assess --> Mesh[Check Mesh Network]
-
-    Battery --> Tools{Emergency Tools}
-    Mesh --> Tools
-
-    Tools --> Flashlight[Flashlight Toggle]
-    Tools --> SOS[SOS Broadcast]
-    Tools --> Listen[Sound Signal Listen]
-    Tools --> Network[Mesh Network Share GPS]
-
-    Flashlight --> Monitor[Monitor Status]
-    SOS --> Monitor
-    Listen --> Monitor
-    Network --> Monitor
-
-    Monitor --> Resolved{Emergency Resolved}
-    Resolved -->|Yes| Deactivate[Deactivate Protocol]
-    Resolved -->|No| Tools
-```
-
-**Key Features:**
-- **Works Offline**: All core functions work without internet
-- **Mesh Network**: P2P communication via Bluetooth/WebRTC
-- **GPS Sharing**: One-tap location sharing with rescuers
-- **Power Saving**: Ultra-low power mode extends battery life
-
----
+--
 
 ## Gamification System
 
@@ -456,21 +214,6 @@ graph TD
     Hero --> LevelUp
 ```
 
-### Streak System
-
-```mermaid
-flowchart LR
-    Day1([Day 1]) --> Day3([Day 3])
-    Day3 --> Streak3[3 Day Streak Consistent Learner]
-    Streak3 --> Day7([Day 7])
-    Day7 --> Streak7[7 Day Streak 100 XP Bonus]
-    Streak7 --> Day30([Day 30])
-    Day30 --> Streak30[30 Day Streak Dedicated Badge]
-    Streak30 --> Day100([Day 100])
-    Day100 --> Streak100[100 Day Streak Legendary]
-```
-
----
 
 ## Technology Stack
 
@@ -487,18 +230,7 @@ flowchart LR
 | **Motion** | Animations | 12.23.24 |
 | **Recharts** | Data Visualization | 2.15.2 |
 
-### Design System
 
-- **Style**: Neo-Brutalism (bold borders, offset shadows)
-- **Typography**: Nunito (rounded, child-friendly)
-- **Colors**:
-  - Cyan (#4CC9F0) — Primary actions
-  - Green (#06D6A0) — Success, safe zones
-  - Yellow (#FFD166) — Warnings, achievements
-  - Red/Pink (#EF476F) — Danger, emergency
-  - Dark (#0A0F1A) — Survival mode
-
----
 
 ## Installation & Setup
 
@@ -507,6 +239,8 @@ flowchart LR
 - npm, yarn, or pnpm package manager
 
 ### Quick Start
+Download github zipped file
+Go to Terminal:
 
 ```bash
 # Install dependencies
@@ -518,6 +252,7 @@ npm run dev
 # Build for production
 npm run build
 ```
+Open `http://localhost:xxxx` in your browser
 
 ### Available Scripts
 
@@ -531,7 +266,7 @@ npm run build
 ## Original Design
 
 The original design is available at [Figma](https://www.figma.com/design/nXSyHFCcEQ4jQrXt7gQHWG/AI-Disaster-Resilience-Platform).
-
+But we made some changes to the current one, so a bit different with final product.
 ---
 
 ## License
